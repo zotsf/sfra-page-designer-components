@@ -1,0 +1,37 @@
+{
+	"name": "A/B Test Layout",
+	"description": "A/B test layout with 2 dropzones",
+	"group": "1_Layout",
+	"attribute_definition_groups": [
+		{
+			"id": "abTestOption",
+			"name": "AB Test Options",
+			"attribute_definitions": [
+				{
+					"id": "abTestID",
+					"name": "A/B Test ID",
+					"type": "string",
+					"required": true
+				},
+				{
+					"id": "testSegmentID",
+					"name": "Test Segment ID",
+					"type": "string",
+					"required": true
+				}
+			]
+		}
+	],
+	"region_definitions": [
+		{
+			"id": "testComponents",
+			"name": "Test Components",
+			"component_type_exclusions": []
+		},
+		{
+			"id": "controlComponents",
+			"name": "Control Components",
+			"component_type_exclusions": []
+		}
+	]
+}

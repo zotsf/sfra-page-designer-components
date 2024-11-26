@@ -1,0 +1,7 @@
+<isif condition="${pdict.A}">
+	<isprint value="${pdict.regions.testComponents.render()}" encoding="off"/>
+</isif>
+
+<isif condition="${pdict.B}">
+	<isprint value="${pdict.regions.controlComponents.render()}" encoding="off"/>
+</isif>
